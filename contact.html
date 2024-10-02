@@ -5,7 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+        font-family: 'Arial';
+    }
+
+    #img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-img {
+        margin-top: 145px;
+    }
+
+    #header {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .header-text {
+        display: inline;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .header-text:hover {
+        color: rgb(52, 209, 209);
+    }
+</style>
+
 <body>
-    
+    <div id="img-container">
+        <img id="header-img" src="header_background.jpg">
+    </div>
+
+    <div id="header">
+        <p class="header-text">HOME</p>
+        <p class="header-text">ABOUT</p>
+        <p class="header-text">CONTACT</p>
+    </div>
 </body>
 </html>
