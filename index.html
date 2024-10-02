@@ -91,6 +91,32 @@
         background-color: white;
     }
 
+    #third-section {
+        margin: 0 auto;
+    }
+
+    #images-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third-images {
+        margin: 7px;
+        border: 2px black solid;
+    }
+
+    .image-wrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .image-caption {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
 </style>
 
 <body>
@@ -113,6 +139,25 @@
             <button id="second-button">READ MORE</button>
         </div>
     </div>
+
+    <div id="third-section">
+        <div id="images-container">
+            <!-- Group each image with its text in a container -->
+            <div class="image-wrapper">
+                <img class="third-images" src="father.jpg" alt="The Father">
+                <h2 class="image-caption">THE FATHER</h2>
+            </div>
+            <div class="image-wrapper">
+                <img class="third-images" src="actor.jpg" alt="The Actor">
+                <h2 class="image-caption">THE ACTOR</h2>
+            </div>
+            <div class="image-wrapper">
+                <img class="third-images" src="nerd.jpg" alt="The Nerd">
+                <h2 class="image-caption">THE NERD</h2>
+            </div>
+        </div>
+    </div>
     
+
 </body>
 </html>
