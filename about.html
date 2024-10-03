@@ -67,13 +67,38 @@
         text-align: center;
         padding: 10px;
     }
-    .footer-conatier{
-    height: 100px;
-    background-color: darkgray;
-    width: 100%;
-    padding: 5px; 
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        background-color: #333;
+        width: 100%;
+        padding: 5px; 
+        float: left;
     
-}
+    }
+    .imgHolder{
+        display: flex;
+        justify-content: right;
+        
+        
+    }
+
+    #footer-description-container {
+        border: 1px red solid;
+    }
+
+    #footer_description {
+        display: flex;
+        justify-content: left;
+        color: white;
+        padding-left: 20px;
+    }
+    .image{
+        display: flex;
+        flex-direction: left;
+    }
+    
 </style>
 
 <body>
@@ -105,8 +130,16 @@
 
     <h4 class="text">Template details</h4>
     <p class="text">Design version 2. Code version 1. Website Template details, discussion and updates for this <a href="">Mustache Enthusiast Website Template.</a> Website Template design by <a href="">Free Website Templates</a>. Please feel free to remove some or all the text and links of this page and replace it with your own About content.</p>
-    <div class="footer-conatier">
-
+    <div class="footer-container">
+        <div id="footer-description-container">
+            <p id="footer_description">2023 by Mustacchio, All Rights Reserved</p>
+        </div>
+        <div class="imgHolder">
+            <img class="image" src="icon-facebook.jpg">
+            <img class="image" src="icon-googleplus.jpg">
+            <img class="image" src="icon-pinterest.jpg">
+            <img class="image" src="icon-twitter.jpg">
+        </div>
     </div>
 </body>
 </html>
