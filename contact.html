@@ -31,7 +31,7 @@
         width: 100%;
         display: inline-block;
         text-align: center;
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .header-text {
@@ -44,6 +44,52 @@
         color: rgb(52, 209, 209);
     }
 
+    #body {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #touch {
+        background-color: black;
+        color: white;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    #body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-boxes {
+        width: 500px;
+        padding: 10px;
+        text-align: center;
+        margin: 11px;
+        border: 2px black solid;
+    }
+
+    #name {
+        margin-top: 20px;
+    }
+
+    #message {
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        height: 100px;
+        background-color: gray;
+        width: 100%;
+        padding: 5px;
+    }
 </style>
 
 <body>
@@ -56,6 +102,15 @@
         <p class="header-text">ABOUT</p>
         <p class="header-text">CONTACT</p>
     </div>
-    
+
+    <div id="body">
+        <p id="touch">LET'S KEEP IN TOUCH</p>
+
+        <p><input id="name" class="input-boxes" type="text" placeholder="NAME"></p>
+        <p><input class="input-boxes" type="text" placeholder="ADDRESS"></p>
+        <p><input class="input-boxes" type="text" placeholder="EMAIL"></p>
+        <p><input class="input-boxes" type="text" placeholder="PHONE NUMBER"></p>
+        <p><input id="message" class="input-boxes" type="text" placeholder="MESSAGE"></p>
+    </div>
 </body>
 </html>
