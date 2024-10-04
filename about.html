@@ -4,97 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website_1</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-        #img-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    body {
+        background-color: white;
+        color: black;
+        font-family: 'Arial';
+    }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px black solid;
-        }
+    #img-container {
+        margin: 0 auto;
+        display: flex;
+    }
 
-        .generalfooterdescriptionsettings {
-            font-size: 14px;
-            font-family: 'Raleway', sans-serif;
-            text-align: left;
-            padding-left: 22px;
-            padding-right: 18px;
-        }
+    #header-img {
+        margin: 0 auto;
+        margin-top: 145px;
+    }
 
-        .generalfootersettings {
-            font-size: 14px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 600;
-            vertical-align: top;
-            padding-left: 22px;
-            color: white;
-        }
+    #header {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 60px;
+    }
 
-        .rights-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-      
-        .rights {
-            font-size: 11px;
-            font-family: 'Raleway', sans-serif;
-            text-align: left;
-            padding-left: 22px;
-        }
+    .header-text {
+        display: inline;
+        padding: 20px;
+        font-weight: bold;
+    }
 
-        .footertable {
-            background-color: black;
-            padding-top: 0; 
-        }
+    .header-text:hover {
+        color: rgb(52, 209, 209);
+    }
 
-        .logosettings {
-            height: 35px;
-            width: 35px;
-            padding: 10px;
-        }
+    #started {
+        margin-top: 20px;
+    }
+   
 
-        h4, h1, p {
-            margin-bottom: 0;
-        }
-    </style>
-</head>
+    #image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer-container{
+        display: flex;
+       justify-content: space-between; 
+        height: 100px;
+        background-color: #333;
+        width: 100%;
+        padding: 5px; 
+        margin-top: 40px;
+        
+    
+    }
+    .imgHolder{
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+    }
+
+
+    #footer_description {
+        display: flex;
+        justify-content: left;
+        text-align: end;
+        margin-top: ;
+        color: white;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+    .image{
+        display: flex;
+        flex-direction: left;
+        height: 30px;
+        width: 300px;
+    }
+    
+</style>
+
+  </head>
 
 <body>
-    <h1>MUSTACCHIO STARTED</h1>
 
     <div id="img-container">
+        <img id="header-img" src="header_background.jpg">
+    </div>
+
+    <div id="header">
+        <p class="header-text">HOME</p>
+        <p class="header-text">ABOUT</p>
+        <p class="header-text">CONTACT</p>
+    </div>
+
+    <h1 class="text" id="started">MUSTACCHIO STARTED</h1>
+
+    <div id="image-container">
         <img src="photographer.jpg">
     </div>
 
-    <h4>We Have Free plates for Everyone</h4>
-    <p>Our website are created with inspiration, checked for quality and originality and meticulously sliced and coded. Whats more, theyre absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our links if you want to.</p>
+    <h4 class="text">We Have More Templates for You</h4>
+    <p class="text">Looking for more templeates? Just browse through all our <a href="">Free Website Templates</a> and find what youre looking for. But if you dont find any website template you can use, you can try our <a href="">Free Web Design</a> service and tell us all about it. Maybe youre looking for something different, something special. And we love the challenge of doing something different and something special.</p>
 
-    <h4>We Have More Templates for You</h4>
-    <p>Looking for more templeates? Just browse through all our <a href="">Free Website Templates</a> and find what youre looking for. But if you dont find any website template you can use, you can try our <a href="">Free Web Design</a> service and tell us all about it. Maybe youre looking for something different, something special. And we love the challenge of doing something different and something special.</p>
+    <h4 class="text">Be Part of Our Community</h4>
+    <p class="text">if you're experiending issues and concerns about this website template, join the discussion <a href="">on our forum</a> and meet other people in the community who share the same interests with you</p>
 
-    <table class="footertable">
-        <tr>
-            <td class="generalfootersettings" style="padding-top: 20px;">Unsubscribe</td>
-            <td class="generalfootersettings" colspan="2" style="padding-top: 20px; padding-left: 100px;">Email: Loremipsum@gmail.com</td>
-        </tr>
-        <tr>
-            <td class="generalfootersettings">Help Center</td>
-            <td class="generalfootersettings" colspan="2" style="padding-left: 100px;">Phone number: 123-456-7890</td>
-        </tr>
-        <tr>
-            <td class="generalfootersettings">Privacy</td>
-            <td class="generalfootersettings" colspan="2" style="padding-left: 100px;">Address: 123 notrealaddress rd</td>
-        </tr>
-    </table>
+    <h4 class="text">Template details</h4>
+    <p class="text">Design version 2. Code version 1. Website Template details, discussion and updates for this <a href="">Mustache Enthusiast Website Template.</a> Website Template design by <a href="">Free Website Templates</a>. Please feel free to remove some or all the text and links of this page and replace it with your own About content.</p>
+    <div class="footer-container">
+        <div class="footer-description-container">
+            <p id="footer_description">2023 by Mustacchio, All Rights Reserved</p>
+        </div>
+        <div class="imgHolder">
+            <img class="image" src="icon-facebook.jpg">
+            <img class="image" src="icon-googleplus.jpg">
+            <img class="image" src="icon-pinterest.jpg">
+            <img class="image" src="icon-twitter.jpg">
+        </div>
+    </div>
 </body>
 </html>
