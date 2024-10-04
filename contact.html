@@ -43,6 +43,41 @@
     .header-text:hover {
         color: rgb(52, 209, 209);
     }
+    .footer-container{
+        display: flex;
+       justify-content: space-between; 
+        height: 100px;
+        background-color: #333;
+        width: 100%;
+        padding: 5px; 
+        margin-top: 40px;
+        
+    
+    }
+    .imgHolder{
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+    }
+
+
+    #footer_description {
+        display: flex;
+        justify-content: left;
+        text-align: end;
+       
+        color: white;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+    .image{
+        display: flex;
+        flex-direction: left;
+        height: 30px;
+        
+    }
 
 </style>
 
@@ -56,6 +91,16 @@
         <p class="header-text">ABOUT</p>
         <p class="header-text">CONTACT</p>
     </div>
-    
+    <div class="footer-container">
+        <div class="footer-description-container">
+            <p id="footer_description">2023 by Mustacchio, All Rights Reserved</p>
+        </div>
+        <div class="imgHolder">
+            <img class="image" src="icon-facebook.jpg">
+            <img class="image" src="icon-googleplus.jpg">
+            <img class="image" src="icon-pinterest.jpg">
+            <img class="image" src="icon-twitter.jpg">
+        </div>
+    </div>
 </body>
 </html>
