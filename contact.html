@@ -49,6 +49,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     #touch {
@@ -63,11 +64,6 @@
         font-weight: 800;
     }
 
-    #body {
-        display: flex;
-        flex-direction: column;
-    }
-
     .input-boxes {
         width: 500px;
         padding: 10px;
@@ -80,16 +76,46 @@
         margin-top: 20px;
     }
 
-    #message {
+    #messsage {
         padding-bottom: 100px;
     }
 
-    .footer-container {
+    .footer-container{
+        display: flex;
+       justify-content: space-between; 
         height: 100px;
-        background-color: gray;
+        background-color: #333;
         width: 100%;
-        padding: 5px;
+        padding: 5px; 
+        margin-top: 40px;
+        
+    
     }
+    .imgHolder{
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+    }
+
+
+    #footer_description {
+        display: flex;
+        justify-content: left;
+        text-align: end;
+       
+        color: white;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+    .image{
+        display: flex;
+        flex-direction: left;
+        height: 30px;
+        
+    }
+
 </style>
 
 <body>
@@ -106,11 +132,23 @@
     <div id="body">
         <p id="touch">LET'S KEEP IN TOUCH</p>
 
-        <p><input id="name" class="input-boxes" type="text" placeholder="NAME"></p>
-        <p><input class="input-boxes" type="text" placeholder="ADDRESS"></p>
-        <p><input class="input-boxes" type="text" placeholder="EMAIL"></p>
-        <p><input class="input-boxes" type="text" placeholder="PHONE NUMBER"></p>
-        <p><input id="message" class="input-boxes" type="text" placeholder="MESSAGE"></p>
+        <p> <input id="name" class="input-boxes" placeholder="NAME" type="text"></p>
+        <p><input type="text" placeholder="ADDRESS" class="input-boxes"></p>
+        <p><input type="text" class="input-boxes" placeholder="EMAIL"></p>
+        <p><input type="text" class="input-boxes" placeholder="PHONE NUMBER"></p>
+        <p><input id="message" type="text" class="input-boxes" placeholder="MESSAGE"></p>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-description-container">
+            <p id="footer_description">2023 by Mustacchio, All Rights Reserved</p>
+        </div>
+        <div class="imgHolder">
+            <img class="image" src="icon-facebook.jpg">
+            <img class="image" src="icon-googleplus.jpg">
+            <img class="image" src="icon-pinterest.jpg">
+            <img class="image" src="icon-twitter.jpg">
+        </div>
     </div>
 </body>
 </html>
